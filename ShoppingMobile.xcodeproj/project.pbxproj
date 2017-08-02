@@ -12,7 +12,6 @@
 		911A64FB1F30BE5A00154E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A64F91F30BE5A00154E48 /* Main.storyboard */; };
 		911A64FD1F30BE5A00154E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911A64FC1F30BE5A00154E48 /* Assets.xcassets */; };
 		911A65001F30BE5A00154E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A64FE1F30BE5A00154E48 /* LaunchScreen.storyboard */; };
-		911A650C1F30C65400154E48 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A650B1F30C65400154E48 /* BaseViewController.swift */; };
 		911A650E1F30CC1300154E48 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A650D1F30CC1300154E48 /* TabBarViewController.swift */; };
 		91CF8C351F31F3FD0001407F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */; };
 		91CF8C3B1F31F4590001407F /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */; };
@@ -23,6 +22,7 @@
 		91CF8C4E1F31FB300001407F /* UIColor+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C4D1F31FB300001407F /* UIColor+String.swift */; };
 		91CF8C5F1F320E660001407F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C5E1F320E660001407F /* UITableView+Extension.swift */; };
 		91CF8C621F32188D0001407F /* RequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C611F32188D0001407F /* RequestPlugin.swift */; };
+		91CF8C661F3230350001407F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C651F3230350001407F /* BaseViewController.swift */; };
 		CD65407C4CCAAC6F029E054A /* Pods_ShoppingMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE507443498FBCE45DE7D968 /* Pods_ShoppingMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,6 @@
 		911A64FC1F30BE5A00154E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911A64FF1F30BE5A00154E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		911A65011F30BE5A00154E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		911A650B1F30C65400154E48 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		911A650D1F30CC1300154E48 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartViewController.swift; path = View/ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoViewController.swift; path = View/UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		91CF8C5E1F320E660001407F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		91CF8C601F32146E0001407F /* ShoppingMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoppingMobile-Bridging-Header.h"; sourceTree = "<group>"; };
 		91CF8C611F32188D0001407F /* RequestPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPlugin.swift; sourceTree = "<group>"; };
+		91CF8C651F3230350001407F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE507443498FBCE45DE7D968 /* Pods_ShoppingMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 		911A650A1F30C65400154E48 /* BaseMVP */ = {
 			isa = PBXGroup;
 			children = (
-				911A650B1F30C65400154E48 /* BaseViewController.swift */,
+				91CF8C651F3230350001407F /* BaseViewController.swift */,
 				911A650D1F30CC1300154E48 /* TabBarViewController.swift */,
 				91CF8C471F31F6090001407F /* CustomNavigationController.swift */,
 				91CF8C501F3205070001407F /* Model */,
@@ -451,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CF8C661F3230350001407F /* BaseViewController.swift in Sources */,
 				91CF8C3B1F31F4590001407F /* UserInfoViewController.swift in Sources */,
 				91CF8C621F32188D0001407F /* RequestPlugin.swift in Sources */,
 				91CF8C3E1F31F49D0001407F /* ClassifyViewController.swift in Sources */,
@@ -461,7 +462,6 @@
 				91CF8C411F31F4AA0001407F /* HomeViewController.swift in Sources */,
 				91CF8C481F31F6090001407F /* CustomNavigationController.swift in Sources */,
 				911A64F61F30BE5A00154E48 /* AppDelegate.swift in Sources */,
-				911A650C1F30C65400154E48 /* BaseViewController.swift in Sources */,
 				911A650E1F30CC1300154E48 /* TabBarViewController.swift in Sources */,
 				91CF8C5F1F320E660001407F /* UITableView+Extension.swift in Sources */,
 			);
