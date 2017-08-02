@@ -1,14 +1,14 @@
 //
-//  BaseViewController.swift
+//  HomeViewController.swift
 //  ShoppingMobile
 //
-//  Created by stray s on 2017/8/1.
+//  Created by stray s on 2017/8/2.
 //  Copyright © 2017年 stray. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

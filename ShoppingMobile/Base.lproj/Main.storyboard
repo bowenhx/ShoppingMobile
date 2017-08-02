@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wm5-Oy-Lhb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +22,222 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QVH-vC-UEQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1839" y="4974"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="i6f-Ey-SsP">
+            <objects>
+                <tabBarController id="Wm5-Oy-Lhb" customClass="TabBarViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="puF-0B-74r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eyN-2d-Gyy" kind="relationship" relationship="viewControllers" id="pYx-Lg-d4k"/>
+                        <segue destination="Ysg-Ra-fnD" kind="relationship" relationship="viewControllers" id="2pk-Rn-xS7"/>
+                        <segue destination="q4a-QF-eyB" kind="relationship" relationship="viewControllers" id="oq0-VQ-qD9"/>
+                        <segue destination="RqX-hC-z9B" kind="relationship" relationship="viewControllers" id="ztG-2S-P22"/>
+                        <segue destination="c1S-wm-78P" kind="relationship" relationship="viewControllers" id="aXA-Pt-DkH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g64-xk-0ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2145" y="2471"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="lfy-Va-bjT">
+            <objects>
+                <navigationController id="eyN-2d-Gyy" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="HPC-FB-cBX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lXN-qG-56U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="96J-58-fdd" kind="relationship" relationship="rootViewController" id="Knb-PA-TdW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cy4-kA-fav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="779"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="RkM-Zs-yiK">
+            <objects>
+                <viewController id="96J-58-fdd" customClass="HomeViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W65-mu-UD1"/>
+                        <viewControllerLayoutGuide type="bottom" id="qO4-aM-m8S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdd-lL-V7k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1EC-c2-SKg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHp-K0-vNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="774"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ek7-tG-CEg">
+            <objects>
+                <navigationController id="Ysg-Ra-fnD" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ah7-s0-XG1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gzV-jt-Moe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xg4-h8-H2K" kind="relationship" relationship="rootViewController" id="Cpk-VK-Z9T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiV-8f-SGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="1513"/>
+        </scene>
+        <!--Classify View Controller-->
+        <scene sceneID="T8A-Ua-KYB">
+            <objects>
+                <viewController id="xg4-h8-H2K" customClass="ClassifyViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xoj-Vg-Ue3"/>
+                        <viewControllerLayoutGuide type="bottom" id="AZA-1e-7xe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ePg-WB-NEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mTm-py-uQ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Df4-Iz-qRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="1513"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gQ2-53-9Iu">
+            <objects>
+                <navigationController id="q4a-QF-eyB" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LnM-zH-mJn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A25-Sy-QGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L8M-9X-qhk" kind="relationship" relationship="rootViewController" id="3fR-dE-8Xo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUf-PP-FDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="2260"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="6gJ-R3-oU9">
+            <objects>
+                <viewController id="L8M-9X-qhk" customClass="ShopViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d17-ah-JLL"/>
+                        <viewControllerLayoutGuide type="bottom" id="AQY-yi-aq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="61Y-er-aGu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VIc-1c-Ay6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK1-SX-Cvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="2260"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="CUX-kt-24D">
+            <objects>
+                <navigationController id="RqX-hC-z9B" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zud-j2-MGI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShO-1g-IZE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d7l-W7-ah6" kind="relationship" relationship="rootViewController" id="DPP-QI-tpD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9D-89-YGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="3088"/>
+        </scene>
+        <!--Shopping Cart View Controller-->
+        <scene sceneID="jo3-te-BCQ">
+            <objects>
+                <viewController id="d7l-W7-ah6" customClass="ShoppingCartViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="af5-xD-21r"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRf-If-1jX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HLE-kY-HLb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUw-gb-GPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKz-EG-b0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="3088"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Rn8-P4-QzD">
+            <objects>
+                <navigationController id="c1S-wm-78P" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zmq-Qw-EW9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX3-P1-7QP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qaf-iv-7IY" kind="relationship" relationship="rootViewController" id="m0w-2g-yGK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYZ-vz-Hr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="3911"/>
+        </scene>
+        <!--User Info View Controller-->
+        <scene sceneID="dE5-WU-TKM">
+            <objects>
+                <viewController id="qaf-iv-7IY" customClass="UserInfoViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V0w-3W-l96"/>
+                        <viewControllerLayoutGuide type="bottom" id="u5o-Lb-wya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EMj-5G-bgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yq-PJ-aBR">
+                                <rect key="frame" x="171" y="244" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="hqg-mv-4oG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ie-sR-4g3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9A-qF-C9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="3911"/>
         </scene>
     </scenes>
 </document>
