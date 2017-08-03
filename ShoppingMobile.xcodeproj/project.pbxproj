@@ -13,6 +13,10 @@
 		911A64FD1F30BE5A00154E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911A64FC1F30BE5A00154E48 /* Assets.xcassets */; };
 		911A65001F30BE5A00154E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A64FE1F30BE5A00154E48 /* LaunchScreen.storyboard */; };
 		911A650E1F30CC1300154E48 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A650D1F30CC1300154E48 /* TabBarViewController.swift */; };
+		912CAEA21F3350A100EE2B97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CAEA01F3350A100EE2B97 /* LoginViewController.swift */; };
+		912CAEA31F3350A100EE2B97 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912CAEA11F3350A100EE2B97 /* LoginViewController.xib */; };
+		912CAEA51F3352DD00EE2B97 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CAEA41F3352DD00EE2B97 /* UserInfo.swift */; };
+		912CAEA71F3375E000EE2B97 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CAEA61F3375E000EE2B97 /* Config.swift */; };
 		91CF8C351F31F3FD0001407F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */; };
 		91CF8C3B1F31F4590001407F /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */; };
 		91CF8C3E1F31F49D0001407F /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C3D1F31F49D0001407F /* ClassifyViewController.swift */; };
@@ -37,6 +41,10 @@
 		911A64FF1F30BE5A00154E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		911A65011F30BE5A00154E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911A650D1F30CC1300154E48 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		912CAEA01F3350A100EE2B97 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		912CAEA11F3350A100EE2B97 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		912CAEA41F3352DD00EE2B97 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		912CAEA61F3375E000EE2B97 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartViewController.swift; path = View/ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoViewController.swift; path = View/UserInfoViewController.swift; sourceTree = "<group>"; };
 		91CF8C3D1F31F49D0001407F /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassifyViewController.swift; path = View/ClassifyViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 		911A64F41F30BE5A00154E48 /* ShoppingMobile */ = {
 			isa = PBXGroup;
 			children = (
+				912CAE9C1F33507700EE2B97 /* Login */,
 				91CF8C4B1F31FA2E0001407F /* Tools */,
 				911A650A1F30C65400154E48 /* BaseMVP */,
 				91CF8C2B1F31F2800001407F /* ClassifyMVP(分类) */,
@@ -120,6 +129,41 @@
 				91CF8C511F3205070001407F /* Presenter */,
 			);
 			path = BaseMVP;
+			sourceTree = "<group>";
+		};
+		912CAE9C1F33507700EE2B97 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				912CAE9D1F33507700EE2B97 /* Model */,
+				912CAE9E1F33507700EE2B97 /* Presenter */,
+				912CAE9F1F33507700EE2B97 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		912CAE9D1F33507700EE2B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912CAEA41F3352DD00EE2B97 /* UserInfo.swift */,
+				912CAEA61F3375E000EE2B97 /* Config.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912CAE9E1F33507700EE2B97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		912CAE9F1F33507700EE2B97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				912CAEA01F3350A100EE2B97 /* LoginViewController.swift */,
+				912CAEA11F3350A100EE2B97 /* LoginViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		91CF8C2B1F31F2800001407F /* ClassifyMVP(分类) */ = {
@@ -390,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912CAEA31F3350A100EE2B97 /* LoginViewController.xib in Resources */,
 				911A65001F30BE5A00154E48 /* LaunchScreen.storyboard in Resources */,
 				911A64FD1F30BE5A00154E48 /* Assets.xcassets in Resources */,
 				911A64FB1F30BE5A00154E48 /* Main.storyboard in Resources */,
@@ -451,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912CAEA21F3350A100EE2B97 /* LoginViewController.swift in Sources */,
 				91CF8C661F3230350001407F /* BaseViewController.swift in Sources */,
 				91CF8C3B1F31F4590001407F /* UserInfoViewController.swift in Sources */,
 				91CF8C621F32188D0001407F /* RequestPlugin.swift in Sources */,
@@ -463,6 +509,8 @@
 				91CF8C481F31F6090001407F /* CustomNavigationController.swift in Sources */,
 				911A64F61F30BE5A00154E48 /* AppDelegate.swift in Sources */,
 				911A650E1F30CC1300154E48 /* TabBarViewController.swift in Sources */,
+				912CAEA71F3375E000EE2B97 /* Config.swift in Sources */,
+				912CAEA51F3352DD00EE2B97 /* UserInfo.swift in Sources */,
 				91CF8C5F1F320E660001407F /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

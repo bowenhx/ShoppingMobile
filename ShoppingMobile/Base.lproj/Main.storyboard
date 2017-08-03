@@ -32,10 +32,13 @@
         <scene sceneID="i6f-Ey-SsP">
             <objects>
                 <tabBarController id="Wm5-Oy-Lhb" customClass="TabBarViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="puF-0B-74r">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="puF-0B-74r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.89188492298126221" green="0.24088107049465179" blue="0.1961430162191391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.891884923" green="0.24088107049999999" blue="0.19614301619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="eyN-2d-Gyy" kind="relationship" relationship="viewControllers" id="pYx-Lg-d4k"/>
@@ -49,11 +52,11 @@
             </objects>
             <point key="canvasLocation" x="-2145" y="2471"/>
         </scene>
-        <!--Item-->
+        <!--首页-->
         <scene sceneID="lfy-Va-bjT">
             <objects>
                 <navigationController id="eyN-2d-Gyy" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HPC-FB-cBX"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="首页拷贝" selectedImage="首页" id="HPC-FB-cBX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lXN-qG-56U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -85,11 +88,13 @@
             </objects>
             <point key="canvasLocation" x="1161" y="774"/>
         </scene>
-        <!--Item-->
+        <!--分类-->
         <scene sceneID="ek7-tG-CEg">
             <objects>
                 <navigationController id="Ysg-Ra-fnD" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ah7-s0-XG1"/>
+                    <tabBarItem key="tabBarItem" title="分类" image="分类拷贝" selectedImage="分类" id="ah7-s0-XG1">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gzV-jt-Moe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -121,11 +126,11 @@
             </objects>
             <point key="canvasLocation" x="1161" y="1513"/>
         </scene>
-        <!--Item-->
+        <!--商家店铺-->
         <scene sceneID="gQ2-53-9Iu">
             <objects>
                 <navigationController id="q4a-QF-eyB" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LnM-zH-mJn"/>
+                    <tabBarItem key="tabBarItem" title="商家店铺" image="商家店铺拷贝" selectedImage="商家店铺" id="LnM-zH-mJn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A25-Sy-QGq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -157,11 +162,11 @@
             </objects>
             <point key="canvasLocation" x="1161" y="2260"/>
         </scene>
-        <!--Item-->
+        <!--购物车-->
         <scene sceneID="CUX-kt-24D">
             <objects>
                 <navigationController id="RqX-hC-z9B" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zud-j2-MGI"/>
+                    <tabBarItem key="tabBarItem" title="购物车" image="购物车拷贝" selectedImage="购物车" id="zud-j2-MGI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShO-1g-IZE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -193,11 +198,11 @@
             </objects>
             <point key="canvasLocation" x="1161" y="3088"/>
         </scene>
-        <!--Item-->
+        <!--我的-->
         <scene sceneID="Rn8-P4-QzD">
             <objects>
                 <navigationController id="c1S-wm-78P" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zmq-Qw-EW9"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="我的拷贝" selectedImage="我的" id="zmq-Qw-EW9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX3-P1-7QP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -240,4 +245,16 @@
             <point key="canvasLocation" x="1161" y="3911"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="分类" width="24" height="24"/>
+        <image name="分类拷贝" width="24" height="24"/>
+        <image name="商家店铺" width="24" height="24"/>
+        <image name="商家店铺拷贝" width="24" height="24"/>
+        <image name="我的" width="24" height="24"/>
+        <image name="我的拷贝" width="24" height="24"/>
+        <image name="购物车" width="24" height="24"/>
+        <image name="购物车拷贝" width="24" height="24"/>
+        <image name="首页" width="24" height="24"/>
+        <image name="首页拷贝" width="24" height="24"/>
+    </resources>
 </document>
