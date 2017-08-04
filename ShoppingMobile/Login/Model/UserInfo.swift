@@ -7,6 +7,23 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
+
+
+struct KEYGather {
+    static let userInfoKey = "USERINFOKEY"
+    
+    static let userIDKey = "USERIDKEY"
+    
+    static let userTokenKey = "USERTOKENKEY"
+    
+    
+    
+    
+    
+    
+}
+
 
 class UserInfo: NSObject {
     
@@ -14,5 +31,21 @@ class UserInfo: NSObject {
     
     var username: String?
     var userToken: String?
+    
+    func setDictionary(dictionary: [String: Any], key: String) {
+        Defaults[key] = dictionary
+    }
+    
+    func getDictionary(key: String) -> [String: Any] {
+        return Defaults[key].dictionaryValue
+    }
+    
+    func setArray(array: [Any], key: String) {
+        Defaults[key] = array
+    }
+    
+    func getArray(key: String) -> [Any] {
+        return Defaults[key].arrayValue
+    }
     
 }

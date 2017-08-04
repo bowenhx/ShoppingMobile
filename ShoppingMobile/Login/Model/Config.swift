@@ -13,6 +13,8 @@ public let Screen_W: CGFloat = UIScreen.main.bounds.width
 public let Screen_H: CGFloat = UIScreen.main.bounds.height
 public let Screen_B: CGRect  = UIScreen.main.bounds
 
+
+
 struct URLConfig {
     
     static let Shoop_Base_URL: String = "http:www.baidu.com"

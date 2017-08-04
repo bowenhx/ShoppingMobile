@@ -9,6 +9,11 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - Result (3.2.3)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SwiftyJSON (3.1.4)
+  - SwiftyUserDefaults (3.0.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -17,6 +22,9 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJRefresh
   - Moya
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON
+  - SwiftyUserDefaults
   - YYModel
 
 SPEC CHECKSUMS:
@@ -26,8 +34,11 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 1710deac8c3c22068c627afbacf803b6452255c4
+PODFILE CHECKSUM: 03eb24aab486fb1c23434f51148389baac671ee4
 
 COCOAPODS: 1.2.1

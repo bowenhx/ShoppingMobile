@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+
+class LoginViewController: UIViewController,UITextFieldDelegate{
 
     
     @IBOutlet weak var textPhoneField: UITextField!
@@ -31,9 +32,68 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
         setItemViewColor()
         
     }
+    
+    
+    @IBAction func loginAction(_ sender: UIButton) {
+        if textPhoneField.text?.characters.count == 0 {
+            self.view.showViewTitle(title: TextString.TextLoginPhone)
+            return
+        }
+        
+        if (textPasswordField.text?.characters.count)! == 0 {
+            self.view.showViewTitle(title: TextString.TextLoginPassword)
+            return
+        }
+        
+        if (textPhoneField.text?.textValidateMobile())! {
+            
+        } else {
+            self.view.showViewTitle(title: TextString.TextLoginPhoneError)
+            return
+        }
+        
+        print(textPhoneField.text ?? "手机号", textPasswordField.text ?? "密码")
+        
+        self.view.showViewActivity(title: TextString.TextLoding)
+        
+        self.perform(#selector(afterAction), with: nil, afterDelay: 3)
+    }
+    
+    
+    //自动登录或者记忆密码
+    @IBAction func selectAutoWithMemoryAction(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        
+       
+        
+    }
+    
+    func afterAction()  {
+        self.view.hiddenActivity()
+        
+        UserInfo.sharedInstance.setDictionary(dictionary: ["username":"15502928374","password":"123432"], key: KEYGather.userInfoKey)
+    }
+    
+    //找回密码或者立即注册
+    @IBAction func didFindPasswrodWithRegistAction(_ sender: UIButton) {
+        if sender.titleLabel?.text == "找回密码" {
+            print("找回密码action")
+        } else {
+            print("立即注册action")
+        }
+        
+    }
+    
+    
+    
+    
+    
     
     func setItemViewColor() {
         signUpBtn.setButtonBgColor()
@@ -50,6 +110,16 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textPhoneField.resignFirstResponder()
+        textPasswordField.resignFirstResponder()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

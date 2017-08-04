@@ -28,7 +28,7 @@ extension UIColor {
 extension UIImage {
     
     class func imageWithColor(color: UIColor) -> UIImage {
-        let rect = CGRect.init(origin: CGPoint.zero, size: CGSize.init(width: 1.0, height: 1.0))
+        let rect = CGRect.init(origin: .zero, size: CGSize.init(width: 1.0, height: 1.0))
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
         
@@ -44,9 +44,10 @@ extension UIImage {
 
 extension UIButton {
     func setButtonBgColor() {
-        self.setImage(ColorImage.redGroundColor, for: .normal)
+        let image = ColorImage.redGroundColor
+        self.setBackgroundImage(image, for: .normal)
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 15
+        self.layer.cornerRadius = 22
     }
 }
 
@@ -94,7 +95,7 @@ struct BaseColor {
 
 struct ColorImage {
     //红色图片
-    static let redGroundColor = UIImage.imageWithColor(color: UIColor.HexColor(0xffffff))
+    static let redGroundColor = UIImage.imageWithColor(color: UIColor.red)
     
     
     
