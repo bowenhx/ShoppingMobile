@@ -32,7 +32,7 @@
         <scene sceneID="i6f-Ey-SsP">
             <objects>
                 <tabBarController id="Wm5-Oy-Lhb" customClass="TabBarViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="puF-0B-74r">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="puF-0B-74r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,13 +56,15 @@
         <scene sceneID="lfy-Va-bjT">
             <objects>
                 <navigationController id="eyN-2d-Gyy" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="首页拷贝" selectedImage="首页" id="HPC-FB-cBX"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="首页拷贝" selectedImage="首页" id="HPC-FB-cBX">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lXN-qG-56U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="96J-58-fdd" kind="relationship" relationship="rootViewController" id="Knb-PA-TdW"/>
+                        <segue destination="GEy-2l-qfS" kind="relationship" relationship="rootViewController" id="bvd-rq-VRX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy4-kA-fav" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,37 +72,61 @@
             <point key="canvasLocation" x="351" y="779"/>
         </scene>
         <!--Home View Controller-->
-        <scene sceneID="RkM-Zs-yiK">
+        <scene sceneID="e9W-5C-Qny">
             <objects>
-                <viewController id="96J-58-fdd" customClass="HomeViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GEy-2l-qfS" customClass="HomeViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W65-mu-UD1"/>
-                        <viewControllerLayoutGuide type="bottom" id="qO4-aM-m8S"/>
+                        <viewControllerLayoutGuide type="top" id="oLK-PZ-sNM"/>
+                        <viewControllerLayoutGuide type="bottom" id="y7b-Pt-7JC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wdd-lL-V7k">
+                    <view key="view" contentMode="scaleToFill" id="XxX-UG-KN2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DP0-ve-Aid">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v4R-XI-aME">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DP0-ve-Aid" secondAttribute="trailing" id="1ci-4j-PvM"/>
+                            <constraint firstItem="DP0-ve-Aid" firstAttribute="leading" secondItem="XxX-UG-KN2" secondAttribute="leading" id="J9s-tg-e6e"/>
+                            <constraint firstItem="DP0-ve-Aid" firstAttribute="top" secondItem="oLK-PZ-sNM" secondAttribute="bottom" id="N6e-5g-rfO"/>
+                            <constraint firstItem="y7b-Pt-7JC" firstAttribute="top" secondItem="DP0-ve-Aid" secondAttribute="bottom" id="Nhc-UA-x27"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1EC-c2-SKg"/>
+                    <navigationItem key="navigationItem" id="XUm-zX-zzO">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="DP0-ve-Aid" id="hb8-5S-Woy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cHp-K0-vNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPe-zU-cu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="774"/>
+            <point key="canvasLocation" x="1160.8" y="778.56071964017997"/>
         </scene>
         <!--分类-->
         <scene sceneID="ek7-tG-CEg">
             <objects>
                 <navigationController id="Ysg-Ra-fnD" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="分类" image="分类拷贝" selectedImage="分类" id="ah7-s0-XG1">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gzV-jt-Moe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xg4-h8-H2K" kind="relationship" relationship="rootViewController" id="Cpk-VK-Z9T"/>
+                        <segue destination="ScJ-GG-8jq" kind="relationship" relationship="rootViewController" id="Sjj-F1-Qd4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GiV-8f-SGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,21 +134,21 @@
             <point key="canvasLocation" x="350" y="1513"/>
         </scene>
         <!--Classify View Controller-->
-        <scene sceneID="T8A-Ua-KYB">
+        <scene sceneID="6z6-Ur-S6J">
             <objects>
-                <viewController id="xg4-h8-H2K" customClass="ClassifyViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ScJ-GG-8jq" customClass="ClassifyViewController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xoj-Vg-Ue3"/>
-                        <viewControllerLayoutGuide type="bottom" id="AZA-1e-7xe"/>
+                        <viewControllerLayoutGuide type="top" id="CFI-Av-KjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="G0k-K2-Bnv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ePg-WB-NEW">
+                    <view key="view" contentMode="scaleToFill" id="BL7-6P-8l7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mTm-py-uQ0"/>
+                    <navigationItem key="navigationItem" id="57e-uG-4e4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Df4-Iz-qRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNM-h9-mhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1161" y="1513"/>
         </scene>
@@ -130,7 +156,9 @@
         <scene sceneID="gQ2-53-9Iu">
             <objects>
                 <navigationController id="q4a-QF-eyB" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="商家店铺" image="商家店铺拷贝" selectedImage="商家店铺" id="LnM-zH-mJn"/>
+                    <tabBarItem key="tabBarItem" title="商家店铺" image="商家店铺拷贝" selectedImage="商家店铺" id="LnM-zH-mJn">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A25-Sy-QGq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +194,9 @@
         <scene sceneID="CUX-kt-24D">
             <objects>
                 <navigationController id="RqX-hC-z9B" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="购物车" image="购物车拷贝" selectedImage="购物车" id="zud-j2-MGI"/>
+                    <tabBarItem key="tabBarItem" title="购物车" image="购物车拷贝" selectedImage="购物车" id="zud-j2-MGI">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShO-1g-IZE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -202,7 +232,9 @@
         <scene sceneID="Rn8-P4-QzD">
             <objects>
                 <navigationController id="c1S-wm-78P" customClass="CustomNavigationController" customModule="ShoppingMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="我的拷贝" selectedImage="我的" id="zmq-Qw-EW9"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="我的拷贝" selectedImage="我的" id="zmq-Qw-EW9">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX3-P1-7QP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -13,10 +13,9 @@ class CustomNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let navBar = UINavigationBar.appearance()
-        navBar.barTintColor = BaseColor.navBlueColor
-        navBar.tintColor = UIColor.white
-        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 18)]
+        self.navigationBar.barTintColor = UIColor.white
+        self.navigationBar.tintColor = UIColor.black
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.red, NSFontAttributeName: UIFont.systemFont(ofSize: 18)]
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -24,8 +23,9 @@ class CustomNavigationController: UINavigationController {
         if viewControllers.count > 0 {
             // push 后隐藏 tabbar
             viewController.hidesBottomBarWhenPushed = true
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "def_btn_left_unpressed"), style: .plain, target: self, action: #selector(navigationBackClick))
-            self.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate;
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "home_arrow_left"), style: .plain, target: self, action: #selector(navigationBackClick))
+            viewController.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsetsMake(0, -5, 0, 5)
+            self.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate
             
         }
         
@@ -47,7 +47,8 @@ class CustomNavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-
-   
-
 }
+
+
+
+

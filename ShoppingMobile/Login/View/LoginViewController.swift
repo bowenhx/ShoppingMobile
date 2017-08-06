@@ -8,8 +8,9 @@
 
 import UIKit
 
+typealias LoginSuccessBlock = () -> Void
 
-class LoginViewController: UIViewController,UITextFieldDelegate{
+class LoginViewController: BaseViewController,UITextFieldDelegate{
 
     
     @IBOutlet weak var textPhoneField: UITextField!
@@ -27,42 +28,49 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var textLabel2: UILabel!
     
     
+    var block: LoginSuccessBlock?
     
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         
         
-        setItemViewColor()
+        
         
     }
     
     
     @IBAction func loginAction(_ sender: UIButton) {
-        if textPhoneField.text?.characters.count == 0 {
-            self.view.showViewTitle(title: TextString.TextLoginPhone)
-            return
-        }
-        
-        if (textPasswordField.text?.characters.count)! == 0 {
-            self.view.showViewTitle(title: TextString.TextLoginPassword)
-            return
-        }
-        
-        if (textPhoneField.text?.textValidateMobile())! {
-            
-        } else {
-            self.view.showViewTitle(title: TextString.TextLoginPhoneError)
-            return
-        }
-        
-        print(textPhoneField.text ?? "手机号", textPasswordField.text ?? "密码")
+//        if textPhoneField.text?.characters.count == 0 {
+//            self.view.showViewTitle(title: TextString.TextLoginPhone)
+//            return
+//        }
+//        
+//        if (textPasswordField.text?.characters.count)! == 0 {
+//            self.view.showViewTitle(title: TextString.TextLoginPassword)
+//            return
+//        }
+//        
+//        if (textPhoneField.text?.textValidateMobile())! {
+//            
+//        } else {
+//            self.view.showViewTitle(title: TextString.TextLoginPhoneError)
+//            return
+//        }
+//        
+//        print(textPhoneField.text ?? "手机号", textPasswordField.text ?? "密码")
         
         self.view.showViewActivity(title: TextString.TextLoding)
         
-        self.perform(#selector(afterAction), with: nil, afterDelay: 3)
+        self.perform(#selector(afterAction), with: nil, afterDelay: 1)
+        
+        
     }
     
     
@@ -77,15 +85,20 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
     func afterAction()  {
         self.view.hiddenActivity()
         
-        UserInfo.sharedInstance.setDictionary(dictionary: ["username":"15502928374","password":"123432"], key: KEYGather.userInfoKey)
+//        UserInfo.sharedInstance.setDictionary(dictionary: ["username":"15502928374","password":"123432"], key: KEYGather.userInfoKey)
+        
+       
+        block!()
+        
     }
     
     //找回密码或者立即注册
     @IBAction func didFindPasswrodWithRegistAction(_ sender: UIButton) {
         if sender.titleLabel?.text == "找回密码" {
             print("找回密码action")
+            BaseViewController.pushFromWithNavController(className: "SetingPasswordViewController", fromVC: self)
         } else {
-            print("立即注册action")
+            BaseViewController.pushFromWithNavController(className: "RegistViewController", fromVC: self)
         }
         
     }
@@ -95,8 +108,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
     
     
     
-    func setItemViewColor() {
-        signUpBtn.setButtonBgColor()
+    override func setNewView() {
+        view.backgroundColor = UIColor.white
+        signUpBtn.updataRedBackgroundImage()
         
         findPasswrodBtn.setTitleColor(BaseColor.textGrayColor, for: .normal)
         registerBtn.setTitleColor(BaseColor.textGrayColor, for: .normal)

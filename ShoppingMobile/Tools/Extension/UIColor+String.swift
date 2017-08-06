@@ -43,60 +43,61 @@ extension UIImage {
 }
 
 extension UIButton {
-    func setButtonBgColor() {
-        let image = ColorImage.redGroundColor
+    //生成一个固定红色背景图片
+    func updataRedBackgroundImage() {
+        updataBackgroundImage(color: UIColor.red)
+    }
+    
+    //传一个图片设置button 背景
+    func updataBackgroundImage(color: UIColor) {
+        let image = UIImage.imageWithColor(color: color)
         self.setBackgroundImage(image, for: .normal)
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 22
+        if self.bounds.size.width < 100 {
+            self.layer.cornerRadius = 15;
+        } else {
+            self.layer.cornerRadius = 20
+        }
     }
 }
 
 
 struct BaseColor {
-    /**
-     用于重要级段落文字信息 标题信息
-     */
+    
+     //用于重要级段落文字信息 标题信息
     static let BlackColor = UIColor.HexColor(0x000000)
     
-    /**
-     用于普通级段落文字 引导词
-     */
-    static let DarkGrayColor = UIColor.HexColor(0x343434)
-    
-    /**
-     用于头部导航颜色(蓝色)
-     */
-    static let navBlueColor = UIColor.HexColor(0x00a8b5)
     
     
-    /**
-     用于界面背景颜色
-     */
-    static let BackGroundColor = UIColor.HexColor(0xefefef)
+    //用于界面背景颜色
+    static let viewColor = UIColor.HexColor(0xf7f7f7)
+    
+    static let grayBgColor = UIColor.HexColor(0xf5f5f5)
     
     
-    
-    static let btnGroundColor = UIColor.HexColor(0xffffff)
+    static let GroundWiColor = UIColor.white
     
     
     //红色 颜色
     static let textRedColor = UIColor.HexColor(0xf82222)
     
+    //浅红色
+    static let redTintColor = UIColor.HexColor(0xffa8a8)
+    
+    
     //灰色
     static let textGrayColor = UIColor.HexColor(0x979797)
     static let textTintGrayColor = UIColor.HexColor(0xcccccc)
     
+    //黑色
+    static let textBlockColor = UIColor.HexColor(0x333333)
+    
+    
     //线条颜色
     static let lineGrayColor = UIColor.HexColor(0xe8e8e8)
     
-    static let ReadColor = UIColor.RGBColorWith(120, green: 223, blue: 124)
+    
 
 }
 
-struct ColorImage {
-    //红色图片
-    static let redGroundColor = UIImage.imageWithColor(color: UIColor.red)
-    
-    
-    
-}
+

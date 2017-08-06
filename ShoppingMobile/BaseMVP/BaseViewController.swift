@@ -19,11 +19,32 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = BaseColor.BackGroundColor
+        view.backgroundColor = BaseColor.viewColor
         self.edgesForExtendedLayout = UIRectEdge()
         self.automaticallyAdjustsScrollViewInsets = false;
         
+        setNewView()
         
+        setNewData()
+        
+    }
+ 
+    func setNewView() {
+        
+    }
+    
+    func setNewData()  {
+        
+    }
+    
+    
+    class func pushFromWithNavController(className: String,fromVC: UIViewController) {
+        let nameVC: AnyClass? = NSClassFromString(String("ShoppingMobile." + className))
+        
+        let fromController: UIViewController.Type = (nameVC as? UIViewController.Type)!
+        
+        let vc = fromController.init()
+        fromVC.navigationController?.pushViewController(vc, animated: true)
         
     }
 

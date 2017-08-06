@@ -22,6 +22,11 @@
 		91561F001F34C4D000107257 /* String+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91561EFD1F34C4D000107257 /* String+Text.swift */; };
 		91561F011F34C4D000107257 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91561EFE1F34C4D000107257 /* UITableView+Extension.swift */; };
 		91561F031F34C4D900107257 /* RequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91561F021F34C4D900107257 /* RequestPlugin.swift */; };
+		9168FC851F35571F000F29B1 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9168FC831F35571F000F29B1 /* RegistViewController.swift */; };
+		9168FC861F35571F000F29B1 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9168FC841F35571F000F29B1 /* RegistViewController.xib */; };
+		91C50B2D1F35F939000E5B9C /* CustomSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C50B2C1F35F939000E5B9C /* CustomSearchView.swift */; };
+		91C50B2F1F35F95A000E5B9C /* CustomSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C50B2E1F35F95A000E5B9C /* CustomSearchView.xib */; };
+		91C50B311F361201000E5B9C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C50B301F361201000E5B9C /* UIView+Extension.swift */; };
 		91CF8C351F31F3FD0001407F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */; };
 		91CF8C3B1F31F4590001407F /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */; };
 		91CF8C3E1F31F49D0001407F /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C3D1F31F49D0001407F /* ClassifyViewController.swift */; };
@@ -30,6 +35,11 @@
 		91CF8C481F31F6090001407F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C471F31F6090001407F /* CustomNavigationController.swift */; };
 		91CF8C4E1F31FB300001407F /* UIColor+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C4D1F31FB300001407F /* UIColor+String.swift */; };
 		91CF8C661F3230350001407F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CF8C651F3230350001407F /* BaseViewController.swift */; };
+		91FCD3911F36B4E90062FB93 /* SetingPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCD38F1F36B4E90062FB93 /* SetingPasswordViewController.swift */; };
+		91FCD3971F36BCCA0062FB93 /* SetingPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FCD3961F36BCCA0062FB93 /* SetingPasswordViewController.xib */; };
+		91FCD39A1F36BE510062FB93 /* SetingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCD3981F36BE510062FB93 /* SetingTableViewCell.swift */; };
+		91FCD39B1F36BE510062FB93 /* SetingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FCD3991F36BE510062FB93 /* SetingTableViewCell.xib */; };
+		91FCD39D1F36C0B90062FB93 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCD39C1F36C0B90062FB93 /* BaseTableViewController.swift */; };
 		CD65407C4CCAAC6F029E054A /* Pods_ShoppingMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE507443498FBCE45DE7D968 /* Pods_ShoppingMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +63,11 @@
 		91561EFD1F34C4D000107257 /* String+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Text.swift"; path = "Extension/String+Text.swift"; sourceTree = "<group>"; };
 		91561EFE1F34C4D000107257 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Extension.swift"; path = "Extension/UITableView+Extension.swift"; sourceTree = "<group>"; };
 		91561F021F34C4D900107257 /* RequestPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPlugin.swift; sourceTree = "<group>"; };
+		9168FC831F35571F000F29B1 /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		9168FC841F35571F000F29B1 /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+		91C50B2C1F35F939000E5B9C /* CustomSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchView.swift; sourceTree = "<group>"; };
+		91C50B2E1F35F95A000E5B9C /* CustomSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSearchView.xib; sourceTree = "<group>"; };
+		91C50B301F361201000E5B9C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		91CF8C341F31F3FD0001407F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartViewController.swift; path = View/ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		91CF8C3A1F31F4590001407F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoViewController.swift; path = View/UserInfoViewController.swift; sourceTree = "<group>"; };
 		91CF8C3D1F31F49D0001407F /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassifyViewController.swift; path = View/ClassifyViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +77,11 @@
 		91CF8C4D1F31FB300001407F /* UIColor+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+String.swift"; path = "Extension/UIColor+String.swift"; sourceTree = "<group>"; };
 		91CF8C601F32146E0001407F /* ShoppingMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShoppingMobile-Bridging-Header.h"; path = "Tools/ShoppingMobile-Bridging-Header.h"; sourceTree = "<group>"; };
 		91CF8C651F3230350001407F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		91FCD38F1F36B4E90062FB93 /* SetingPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetingPasswordViewController.swift; sourceTree = "<group>"; };
+		91FCD3961F36BCCA0062FB93 /* SetingPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetingPasswordViewController.xib; sourceTree = "<group>"; };
+		91FCD3981F36BE510062FB93 /* SetingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetingTableViewCell.swift; sourceTree = "<group>"; };
+		91FCD3991F36BE510062FB93 /* SetingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetingTableViewCell.xib; sourceTree = "<group>"; };
+		91FCD39C1F36C0B90062FB93 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		DE507443498FBCE45DE7D968 /* Pods_ShoppingMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,7 +151,10 @@
 			children = (
 				91CF8C651F3230350001407F /* BaseViewController.swift */,
 				911A650D1F30CC1300154E48 /* TabBarViewController.swift */,
+				91FCD39C1F36C0B90062FB93 /* BaseTableViewController.swift */,
 				91CF8C471F31F6090001407F /* CustomNavigationController.swift */,
+				91C50B2C1F35F939000E5B9C /* CustomSearchView.swift */,
+				91C50B2E1F35F95A000E5B9C /* CustomSearchView.xib */,
 				91CF8C501F3205070001407F /* Model */,
 				91CF8C511F3205070001407F /* Presenter */,
 			);
@@ -170,6 +193,12 @@
 			children = (
 				912CAEA01F3350A100EE2B97 /* LoginViewController.swift */,
 				912CAEA11F3350A100EE2B97 /* LoginViewController.xib */,
+				9168FC831F35571F000F29B1 /* RegistViewController.swift */,
+				9168FC841F35571F000F29B1 /* RegistViewController.xib */,
+				91FCD38F1F36B4E90062FB93 /* SetingPasswordViewController.swift */,
+				91FCD3961F36BCCA0062FB93 /* SetingPasswordViewController.xib */,
+				91FCD3981F36BE510062FB93 /* SetingTableViewCell.swift */,
+				91FCD3991F36BE510062FB93 /* SetingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +313,7 @@
 			children = (
 				91CF8C4D1F31FB300001407F /* UIColor+String.swift */,
 				91561EFC1F34C4D000107257 /* MBProgressHUD+Add.swift */,
+				91C50B301F361201000E5B9C /* UIView+Extension.swift */,
 				91561EFD1F34C4D000107257 /* String+Text.swift */,
 				91561EFE1F34C4D000107257 /* UITableView+Extension.swift */,
 			);
@@ -445,7 +475,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				912CAEA31F3350A100EE2B97 /* LoginViewController.xib in Resources */,
+				91C50B2F1F35F95A000E5B9C /* CustomSearchView.xib in Resources */,
 				911A65001F30BE5A00154E48 /* LaunchScreen.storyboard in Resources */,
+				91FCD3971F36BCCA0062FB93 /* SetingPasswordViewController.xib in Resources */,
+				9168FC861F35571F000F29B1 /* RegistViewController.xib in Resources */,
+				91FCD39B1F36BE510062FB93 /* SetingTableViewCell.xib in Resources */,
 				911A64FD1F30BE5A00154E48 /* Assets.xcassets in Resources */,
 				911A64FB1F30BE5A00154E48 /* Main.storyboard in Resources */,
 			);
@@ -506,6 +540,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C50B311F361201000E5B9C /* UIView+Extension.swift in Sources */,
+				91FCD39A1F36BE510062FB93 /* SetingTableViewCell.swift in Sources */,
 				91561EFB1F34C42000107257 /* SAlertController.swift in Sources */,
 				912CAEA21F3350A100EE2B97 /* LoginViewController.swift in Sources */,
 				91CF8C661F3230350001407F /* BaseViewController.swift in Sources */,
@@ -516,13 +552,17 @@
 				91561F001F34C4D000107257 /* String+Text.swift in Sources */,
 				91CF8C351F31F3FD0001407F /* ShoppingCartViewController.swift in Sources */,
 				911A64F81F30BE5A00154E48 /* ViewController.swift in Sources */,
+				9168FC851F35571F000F29B1 /* RegistViewController.swift in Sources */,
 				91CF8C411F31F4AA0001407F /* HomeViewController.swift in Sources */,
 				91561F031F34C4D900107257 /* RequestPlugin.swift in Sources */,
 				91561F011F34C4D000107257 /* UITableView+Extension.swift in Sources */,
 				91CF8C481F31F6090001407F /* CustomNavigationController.swift in Sources */,
+				91FCD39D1F36C0B90062FB93 /* BaseTableViewController.swift in Sources */,
 				91561EFF1F34C4D000107257 /* MBProgressHUD+Add.swift in Sources */,
+				91C50B2D1F35F939000E5B9C /* CustomSearchView.swift in Sources */,
 				911A64F61F30BE5A00154E48 /* AppDelegate.swift in Sources */,
 				911A650E1F30CC1300154E48 /* TabBarViewController.swift in Sources */,
+				91FCD3911F36B4E90062FB93 /* SetingPasswordViewController.swift in Sources */,
 				912CAEA71F3375E000EE2B97 /* Config.swift in Sources */,
 				912CAEA51F3352DD00EE2B97 /* UserInfo.swift in Sources */,
 			);
