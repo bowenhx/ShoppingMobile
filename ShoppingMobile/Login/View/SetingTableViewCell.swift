@@ -16,13 +16,16 @@ class SetingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var btnVerify: UIButton!
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         btnVerify.layer.borderColor = UIColor.red.cgColor
         btnVerify.layer.borderWidth = 1
         btnVerify.layer.masksToBounds = true
-        btnVerify.layer.cornerRadius = 10
+        btnVerify.layer.cornerRadius = 15
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,12 +35,16 @@ class SetingTableViewCell: UITableViewCell {
     }
     
     
-    func loadDataCell(array: [Any], indexPath: NSIndexPath) {
-        labText.text = array[indexPath.section] as? String
-        
+    func loadDataCell(array: NSMutableArray, indexPath: NSIndexPath) {
+        let item = array[indexPath.section] as? [Any]
+        labText.text = item?[0] as? String
+        textField.placeholder = item?[1] as? String
         if indexPath.section > 0 {
             btnVerify.isHidden = true
         }
+        
+       
+        
     }
     
     

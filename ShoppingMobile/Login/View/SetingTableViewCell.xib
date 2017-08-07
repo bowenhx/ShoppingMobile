@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-Cc-5xv">
-                        <rect key="frame" x="8" y="11" width="76.5" height="21"/>
+                        <rect key="frame" x="13" y="10" width="76.5" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="76.5" id="EVC-b7-41K"/>
                             <constraint firstAttribute="height" constant="21" id="PeX-xv-cSh"/>
@@ -29,18 +29,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-WP-2b9">
-                        <rect key="frame" x="251" y="7" width="67" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="iof-7L-2ii"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <state key="normal" title="发送验证码">
-                            <color key="titleColor" red="0.891884923" green="0.24088107049999999" blue="0.19614301619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </state>
-                    </button>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s1O-OZ-mlJ">
-                        <rect key="frame" x="94" y="7" width="143" height="30"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s1O-OZ-mlJ">
+                        <rect key="frame" x="99" y="7" width="165" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Ygn-bz-tFk"/>
                         </constraints>
@@ -48,20 +38,32 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-WP-2b9">
+                        <rect key="frame" x="218" y="7" width="91" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="ZsJ-mZ-1eF"/>
+                            <constraint firstAttribute="height" constant="30" id="iof-7L-2ii"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="发送验证码">
+                            <color key="titleColor" red="0.891884923" green="0.24088107049999999" blue="0.19614301619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="i9W-WP-2b9" secondAttribute="bottom" constant="6.5" id="1Gw-oA-zey"/>
-                    <constraint firstItem="1Vg-Cc-5xv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DnN-lF-88R"/>
-                    <constraint firstItem="i9W-WP-2b9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="LzK-Q9-IMF"/>
-                    <constraint firstItem="1Vg-Cc-5xv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="cBc-qS-zbM"/>
+                    <constraint firstItem="1Vg-Cc-5xv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="DnN-lF-88R"/>
+                    <constraint firstItem="1Vg-Cc-5xv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="cBc-qS-zbM"/>
+                    <constraint firstAttribute="trailing" secondItem="s1O-OZ-mlJ" secondAttribute="trailing" constant="60" id="cP2-qU-B7G"/>
                     <constraint firstItem="s1O-OZ-mlJ" firstAttribute="leading" secondItem="1Vg-Cc-5xv" secondAttribute="trailing" constant="9.5" id="hKY-Dc-Ide"/>
-                    <constraint firstItem="i9W-WP-2b9" firstAttribute="leading" secondItem="s1O-OZ-mlJ" secondAttribute="trailing" constant="14" id="p7t-YM-pyp"/>
                     <constraint firstAttribute="bottom" secondItem="s1O-OZ-mlJ" secondAttribute="bottom" constant="6.5" id="rjq-2M-09D"/>
-                    <constraint firstAttribute="trailing" secondItem="i9W-WP-2b9" secondAttribute="trailing" constant="6" id="un0-Vh-xwq"/>
+                    <constraint firstAttribute="trailing" secondItem="i9W-WP-2b9" secondAttribute="trailing" constant="15" id="un0-Vh-xwq"/>
                     <constraint firstItem="s1O-OZ-mlJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="w67-43-9Y8"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="1Vg-Cc-5xv" secondAttribute="bottom" constant="3.5" id="wd2-Jp-5ZB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Vg-Cc-5xv" secondAttribute="bottom" constant="4.5" id="wd2-Jp-5ZB"/>
                 </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="i9W-WP-2b9" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="U4U-GE-dPr"/>
+            </constraints>
             <connections>
                 <outlet property="btnVerify" destination="i9W-WP-2b9" id="ZoE-Tj-Xdj"/>
                 <outlet property="labText" destination="1Vg-Cc-5xv" id="cWP-9V-Oao"/>

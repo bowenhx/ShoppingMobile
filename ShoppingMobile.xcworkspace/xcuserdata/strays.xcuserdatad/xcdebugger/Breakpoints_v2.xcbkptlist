@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShoppingMobile/BaseMVP/BaseViewController.swift"
-            timestampString = "523605898.869905"
+            timestampString = "523804565.111103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "baseSetNavLeftButtonIsBack()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShoppingMobile/BaseMVP/BaseViewController.swift"
-            timestampString = "523605898.869905"
+            timestampString = "523804565.111103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "baseSetNavLeftButtonIsDismiss()"
             landmarkType = "7">
          </BreakpointContent>

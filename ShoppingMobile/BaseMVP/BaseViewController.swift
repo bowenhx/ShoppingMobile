@@ -39,13 +39,17 @@ class BaseViewController: UIViewController {
     
     
     class func pushFromWithNavController(className: String,fromVC: UIViewController) {
+        self .pushNavTitle(title: "", className: className, fromVC: fromVC)
+    }
+    
+    class func pushNavTitle(title: String, className: String,fromVC: UIViewController) {
         let nameVC: AnyClass? = NSClassFromString(String("ShoppingMobile." + className))
         
         let fromController: UIViewController.Type = (nameVC as? UIViewController.Type)!
         
         let vc = fromController.init()
+        vc.navigationItem.title = title
         fromVC.navigationController?.pushViewController(vc, animated: true)
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -96,7 +96,7 @@ class LoginViewController: BaseViewController,UITextFieldDelegate{
     @IBAction func didFindPasswrodWithRegistAction(_ sender: UIButton) {
         if sender.titleLabel?.text == "找回密码" {
             print("找回密码action")
-            BaseViewController.pushFromWithNavController(className: "SetingPasswordViewController", fromVC: self)
+            BaseViewController.pushNavTitle(title: "找回密码", className: "SetingPasswordViewController", fromVC: self)
         } else {
             BaseViewController.pushFromWithNavController(className: "RegistViewController", fromVC: self)
         }
