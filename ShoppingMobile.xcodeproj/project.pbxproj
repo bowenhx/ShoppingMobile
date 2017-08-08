@@ -11,7 +11,6 @@
 		91034D741F38B6BF006C2180 /* HomeFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91034D731F38B6BF006C2180 /* HomeFactoryView.swift */; };
 		91034D761F38B966006C2180 /* image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91034D751F38B966006C2180 /* image4.png */; };
 		91034D781F38B9D7006C2180 /* HomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91034D771F38B9D7006C2180 /* HomeItemView.swift */; };
-		91034D7A1F38BA4E006C2180 /* HomeItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91034D791F38BA4E006C2180 /* HomeItemView.xib */; };
 		91034D7C1F38CC47006C2180 /* HomeFitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91034D7B1F38CC47006C2180 /* HomeFitItemView.swift */; };
 		911A64F61F30BE5A00154E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A64F51F30BE5A00154E48 /* AppDelegate.swift */; };
 		911A64F81F30BE5A00154E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A64F71F30BE5A00154E48 /* ViewController.swift */; };
@@ -56,7 +55,6 @@
 		91034D731F38B6BF006C2180 /* HomeFactoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFactoryView.swift; sourceTree = "<group>"; };
 		91034D751F38B966006C2180 /* image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image4.png; sourceTree = "<group>"; };
 		91034D771F38B9D7006C2180 /* HomeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemView.swift; sourceTree = "<group>"; };
-		91034D791F38BA4E006C2180 /* HomeItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeItemView.xib; sourceTree = "<group>"; };
 		91034D7B1F38CC47006C2180 /* HomeFitItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFitItemView.swift; sourceTree = "<group>"; };
 		911A64F21F30BE5A00154E48 /* ShoppingMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911A64F51F30BE5A00154E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -302,7 +300,6 @@
 				91034D751F38B966006C2180 /* image4.png */,
 				91034D7B1F38CC47006C2180 /* HomeFitItemView.swift */,
 				91034D771F38B9D7006C2180 /* HomeItemView.swift */,
-				91034D791F38BA4E006C2180 /* HomeItemView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,7 +493,6 @@
 				912CAEA31F3350A100EE2B97 /* LoginViewController.xib in Resources */,
 				91C50B2F1F35F95A000E5B9C /* CustomSearchView.xib in Resources */,
 				911A65001F30BE5A00154E48 /* LaunchScreen.storyboard in Resources */,
-				91034D7A1F38BA4E006C2180 /* HomeItemView.xib in Resources */,
 				91FCD3971F36BCCA0062FB93 /* SetingPasswordViewController.xib in Resources */,
 				9168FC861F35571F000F29B1 /* RegistViewController.xib in Resources */,
 				91FCD39B1F36BE510062FB93 /* SetingTableViewCell.xib in Resources */,

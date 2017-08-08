@@ -10,15 +10,27 @@ import UIKit
 
 class HomeItemView: UIView {
 
-    @IBOutlet weak var itemBtn: UIButton!
+    var itemBtn: UIButton!
     
-    @IBOutlet weak var itemTitle: UILabel!
+    var itemTitle: UILabel!
     
-    class func getItemView() -> HomeItemView{
-        return (Bundle.main.loadNibNamed("HomeItemView", owner: nil, options: nil)?.last as? HomeItemView)!
+
+    init(frame: CGRect,text: String) {
+        super.init(frame: frame)
+        itemBtn = UIButton.init(type: .custom)
+        itemBtn.frame = CGRect.init(x: 0, y: 0, width: self.width, height: self.height - 20)
+        self.addSubview(itemBtn)
+        
+        itemTitle = UILabel.init(frame: CGRect.init(x: 0, y: self.height - 20, width: self.width, height: 20))
+        itemTitle.text = text
+        itemTitle.font = UIFont.systemFont(ofSize: 14)
+        itemTitle.textAlignment = .center
+        self.addSubview(itemTitle)
     }
     
-    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
 
 }

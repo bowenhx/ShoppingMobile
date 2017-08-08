@@ -31,8 +31,12 @@ class SetingPasswordViewController: BaseTableViewController {
     override func setNewView() {
         self.tableView.register(UINib.init(nibName: "SetingTableViewCell", bundle: nil), forCellReuseIdentifier: "setCell")
         self.tableView.separatorStyle = .none
+        self.tableView.backgroundColor = UIColor.clear
+        self.tableView.isScrollEnabled = false
         self.tableView.tableFooterView = self.footerView
         self.footerView.backgroundColor = BaseColor.viewColor
+        
+        
         footerBtn.updataRedBackgroundImage()
     }
     
@@ -76,6 +80,12 @@ class SetingPasswordViewController: BaseTableViewController {
             return 50
         }
         return 0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = BaseColor.viewColor
+        return view
     }
     
     override func didReceiveMemoryWarning() {

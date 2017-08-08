@@ -92,7 +92,9 @@ struct BaseColor {
     //黑色
     static let textBlockColor = UIColor.HexColor(0x333333)
     
+    static let lineColor = UIColor.HexColor(0x5c5c5c)
     
+    static let textGrayTintColor = UIColor.HexColor(0x7d7d7d)
     //线条颜色
     static let lineGrayColor = UIColor.HexColor(0xe8e8e8)
     
